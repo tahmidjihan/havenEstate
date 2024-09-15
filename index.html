@@ -207,7 +207,7 @@
           class="container mx-auto flex flex-col-reverse md:flex-row gap-4 items-center"
         >
           <!-- Text Part -->
-          <div class="md:w-1/2 mb-8 md:mb-0 md:pr-8">
+          <div class="md:w-1/2 mb-8 md:mb-0 md:pr-8 mx-6">
             <h2 class="text-4xl font-extrabold mb-4">
               Revolutionize Your Property Search with VR
             </h2>
@@ -218,6 +218,7 @@
               through and interact with properties, giving you a realistic sense
               of space and design before making a decision.
             </p>
+            <button class="btn btn-success">Read More</button>
           </div>
           <!-- Image Part -->
           <div class="md:w-1/2">
@@ -390,9 +391,9 @@
         </div>
 
         <!-- Cards Section -->
-        <div class="grid lg:grid-cols-4 gap-6 justify-center">
+        <div class="flex flex-col lg:flex-row gap-10 justify-center">
           <!-- Card 1 -->
-          <div class="card bg-base-100 shadow-xl w-96">
+          <div class="card bg-base-100 shadow-xl w-96 mx-auto">
             <figure class="h-80 w-full">
               <img
                 src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRpt9Woix5iLKptWFK6hFtYNZWUkb0YUPR_xw&s"
@@ -411,7 +412,7 @@
           </div>
 
           <!-- Card 2 -->
-          <div class="card bg-base-100 shadow-xl w-96">
+          <div class="card bg-base-100 shadow-xl w-96 mx-auto">
             <figure class="h-80 w-full">
               <img
                 src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQxCKQpRjZwrmnEvdNyAvWo2nzYWSM_kLOXDA&s"
@@ -430,7 +431,7 @@
           </div>
 
           <!-- Card 3 -->
-          <div class="card bg-base-100 shadow-xl w-96">
+          <div class="card bg-base-100 shadow-xl w-96 mx-auto">
             <figure class="h-80 w-full">
               <img
                 src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRvc6gjoUYrHS1eUzm6TpCrv3kpiW7TGSTobw&s"
@@ -447,23 +448,68 @@
               </p>
             </div>
           </div>
+        </div>
+      </section>
+      <section id="contact">
+        <div
+          class="hero min-h-screen"
+          style="
+            background-image: url(https://imagescdn.homes.com/i2/7_ceFRn8-oMCnqlH4D9MxZmp1wtCMF2XBPvLMbBbyZc/114/cirby-side-roseville-ca-2.jpg?p=1);
+          "
+        >
+          <div class="hero-overlay bg-opacity-60"></div>
+          <div class="hero-content text-neutral-content text-center">
+            <div
+              class="card w-full max-w-lg mx-auto p-8 bg-[rgba(0,0,0,0.1)] border border-[rgba(255,255,255,0.3)] backdrop-blur-[8px] shadow-lg"
+            >
+              <!-- Contact Form -->
+              <h2 class="card-title text-3xl text-center mb-6 text-white">
+                Contact Us
+              </h2>
 
-          <!-- Card 4 -->
-          <div class="card bg-base-100 shadow-xl w-96">
-            <figure class="h-80 w-full">
-              <img
-                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRZiPqiO4q-f2jh1FgHbj3ox_mEQyjfW4N35A&s"
-                alt="Top Agent 4"
-                class="object-cover h-full w-full"
-              />
-            </figure>
-            <div class="card-body">
-              <h2 class="card-title text-2xl">Emily Davis</h2>
-              <p class="text-sm text-gray-600">Top Agent</p>
-              <p>
-                Emily’s expertise ensures that you find the best investment
-                opportunity in the housing market.
-              </p>
+              <form>
+                <div class="form-control mb-4">
+                  <label class="label">
+                    <span class="label-text text-white">Name</span>
+                  </label>
+                  <input
+                    type="text"
+                    placeholder="Your Name"
+                    class="input input-bordered w-full bg-transparent text-white placeholder-white border-[rgba(255,255,255,0.3)]"
+                    required
+                  />
+                </div>
+
+                <div class="form-control mb-4">
+                  <label class="label">
+                    <span class="label-text text-white">Email</span>
+                  </label>
+                  <input
+                    type="email"
+                    placeholder="Your Email"
+                    class="input input-bordered w-full bg-transparent text-white placeholder-white border-[rgba(255,255,255,0.3)]"
+                    required
+                  />
+                </div>
+
+                <div class="form-control mb-4">
+                  <label class="label">
+                    <span class="label-text text-white">Message</span>
+                  </label>
+                  <textarea
+                    placeholder="Your Message"
+                    class="textarea textarea-bordered w-full bg-transparent text-white placeholder-white border-[rgba(255,255,255,0.3)]"
+                    rows="4"
+                    required
+                  ></textarea>
+                </div>
+
+                <div class="form-control">
+                  <button type="submit" class="btn btn-success w-full">
+                    Submit
+                  </button>
+                </div>
+              </form>
             </div>
           </div>
         </div>
