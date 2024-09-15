@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light" class="overflow-x-hidden">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>HavenEstate</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="navbar sticky">
+          <div class="navbar-start">
+            <div class="dropdown">
+              <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-5 w-5"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="white"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M4 6h16M4 12h8m-8 6h16"
+                  />
+                </svg>
+              </div>
+              <ul
+                tabindex="0"
+                class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow"
+              >
+                <li><a href="#">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#featured">Featured</a></li>
+              </ul>
+            </div>
+            <ul class="menu menu-horizontal px-1 hidden lg:flex text-white">
+              <li><a href="#">Home</a></li>
+              <li><a href="#about">About</a></li>
+              <li><a href="#featured">Featured</a></li>
+            </ul>
+          </div>
+          <div class="navbar-center">
+            <a class="btn btn-ghost text-xl text-white"
+              ><i class="fas fa-home"></i> HavenEstate</a
+            >
+          </div>
+          <div class="navbar-end">
+            <a class="btn" href="#contact">Contact Us</a>
+          </div>
+        </div>
+      </nav>
+      <div class="hero">
+        <div
+          class="hero min-h-screen"
+          style="
+            background-image: url(https://cdn.modlar.com/photos/8892/img/s_1920_x/old_and_new_city_landscape_58f9715eb08fa.jpg);
+          "
+        >
+          <div class="hero-overlay bg-opacity-60 bg-gray-900"></div>
+          <div>
+            <div class="hero-content text-neutral-content text-center">
+              <div class="max-w-md">
+                <h1 class="mb-5 text-5xl font-bold">Welcome to Haven</h1>
+                <p class="mb-5">
+                  Discover your dream property with us. Whether you're looking
+                  to buy, sell, or rent, Haven offers exceptional real estate
+                  services to guide you every step of the way.
+                </p>
+                <button class="btn btn-success">Explore Listings</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section id="search">
+        <div class="hero bg-base-200 py-52">
+          <div class="hero-content text-center">
+            <div class="max-w-md">
+              <h1 class="text-5xl font-bold">Search In Haven</h1>
+              <p class="py-6">
+                Find your perfect home or property with customized filters to
+                suit your needs.
+              </p>
+              <!-- Search Bar with Filters -->
+              <form class="flex flex-col sm:flex-row gap-4 justify-center">
+                <input
+                  type="text"
+                  placeholder="Enter location or property type"
+                  class="input input-bordered w-full max-w-full lg:w-xl"
+                />
+                <select
+                  class="select select-bordered w-full max-w-full lg:w-xs"
+                >
+                  <option disabled selected>Price Range</option>
+                  <option>Under $100,000</option>
+                  <option>$100,000 - $300,000</option>
+                  <option>$300,000 - $500,000</option>
+                  <option>Above $500,000</option>
+                </select>
+                <select
+                  class="select select-bordered w-full max-w-full lg:w-xs"
+                >
+                  <option disabled selected>Property Type</option>
+                  <option>House</option>
+                  <option>Apartment</option>
+                  <option>Land</option>
+                  <option>Commercial</option>
+                </select>
+                <button class="btn btn-success w-full sm:w-auto">Search</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section
+        id="featured"
+        class="flex flex-col justify-center align-middle mx-auto py-20"
+      >
+        <div class="container mx-auto text-center">
+          <!-- Section Header -->
+          <h1 class="text-4xl font-extrabold mb-4">Featured Properties</h1>
+          <p class="text-lg text-gray-700">
+            Discover our top picks of exceptional properties that offer the best
+            in comfort, style, and location. Explore our featured listings to
+            find your next dream home or investment opportunity.
+          </p>
+        </div>
+        <div
+          class="grid grid-cols-1 md:grid-cols-3 gap-8 justify-center align-middle mx-auto"
+        >
+          <!-- Card 1 -->
+          <div class="card bg-base-100 max-w-96 shadow-xl">
+            <figure class="px-10 pt-10">
+              <img
+                src="https://www.thehousedesigners.com/images/plans/URD/bulk/4282/the-contemporist-front-thd.jpg"
+                alt="Modern House"
+                class="rounded-xl"
+              />
+            </figure>
+            <div class="card-body items-center text-center">
+              <h2 class="card-title">Modern House</h2>
+              <p>Experience luxury living in this state-of-the-art home.</p>
+              <div class="card-actions">
+                <button class="btn btn-success">View Property</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 2 -->
+          <div class="card bg-base-100 max-w-96 shadow-xl">
+            <figure class="px-10 pt-10">
+              <img
+                src="https://www.apartments.com/blog/sites/default/files/styles/small/public/image/2023-06/ParkLine-apartment-in-Miami-FL.jpg?itok=e9OGR_ew"
+                alt="Cozy Apartment"
+                class="rounded-xl"
+              />
+            </figure>
+            <div class="card-body items-center text-center">
+              <h2 class="card-title">Cozy Apartment</h2>
+              <p>Find comfort and style in this charming apartment.</p>
+              <div class="card-actions">
+                <button class="btn btn-success">View Property</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 3 -->
+          <div class="card bg-base-100 max-w-96 shadow-xl">
+            <figure class="px-10 pt-10">
+              <img
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRTN4TOTYiHTsgb6bnaswmAWSeI4lkmJiIS9g&s"
+                alt="Luxury Villa"
+                class="rounded-xl"
+              />
+            </figure>
+            <div class="card-body items-center text-center">
+              <h2 class="card-title">Luxury Villa</h2>
+              <p>Live the dream life in this expansive, elegant villa.</p>
+              <div class="card-actions">
+                <button class="btn btn-success">View Property</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section data-theme="dark" class="py-16 bg-gray-900 text-white">
+        <div
+          class="container mx-auto flex flex-col-reverse md:flex-row gap-4 items-center"
+        >
+          <!-- Text Part -->
+          <div class="md:w-1/2 mb-8 md:mb-0 md:pr-8">
+            <h2 class="text-4xl font-extrabold mb-4">
+              Revolutionize Your Property Search with VR
+            </h2>
+            <p class="text-lg">
+              We leverage cutting-edge VR technology to enhance your experience
+              of exploring apartments and residences from the comfort of your
+              home. Our immersive virtual tours allow you to virtually walk
+              through and interact with properties, giving you a realistic sense
+              of space and design before making a decision.
+            </p>
+          </div>
+          <!-- Image Part -->
+          <div class="md:w-1/2">
+            <img
+              src="https://upload.wikimedia.org/wikipedia/commons/d/d1/VRHeadset.png"
+              alt="Advanced VR Technology"
+              class="w-full h-auto rounded-lg shadow-lg"
+            />
+          </div>
+        </div>
+      </section>
+      <section class="py-16 bg-gray-100">
+        <!-- Section Header -->
+        <div class="text-center mb-12">
+          <h1 class="text-4xl font-extrabold">About Us</h1>
+          <p class="text-lg text-gray-700 mt-4">
+            Learn more about who we are and what drives our vision.
+          </p>
+        </div>
+
+        <!-- Content Section -->
+        <div
+          class="container mx-auto flex flex-col md:flex-row items-center mx-auto"
+        >
+          <!-- Icon Part -->
+          <div
+            class="md:w-1/2 flex justify-center md:justify-end mb-8 md:mb-0 md:pr-8"
+          >
+            <i
+              class="fas fa-question-circle text-success text-[399px] opacity-60"
+            ></i>
+          </div>
+
+          <!-- Text Part -->
+          <div class="md:w-1/2 mx-6 md:mx-auto">
+            <h2 class="text-3xl font-extrabold mb-4">Who We Are</h2>
+            <p class="text-lg text-gray-700">
+              We are a passionate team dedicated to revolutionizing the way
+              people discover, explore, and experience properties. Through our
+              innovative use of virtual reality technology and personalized
+              services, we aim to provide an unparalleled real estate journey,
+              where you can tour your dream home without stepping outside. Our
+              mission is to make home buying and renting easier, more
+              transparent, and more enjoyable for everyone.
+            </p>
+          </div>
+        </div>
+      </section>
+      <style>
+        /* Ensures the images maintain the same aspect ratio and are centered */
+        .card-figure img {
+          object-fit: cover;
+          object-position: center;
+          width: 100%;
+          height: 200px; /* Adjust the height based on the desired aspect ratio */
+        }
+      </style>
+
+      <section class="py-16 bg-gray-100 flex flex-col justify-center">
+        <!-- Section Header -->
+        <div class="text-center mb-12">
+          <h1 class="text-4xl font-extrabold">Explore Our Houses</h1>
+          <p class="text-lg text-gray-700 mt-4">
+            Browse through our collection of beautiful homes, each with its own
+            unique charm and pricing.
+          </p>
+        </div>
+
+        <!-- Cards Grid -->
+        <div
+          class="container mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 justify-center align-middle"
+        >
+          <!-- Card 1: Modern Villa -->
+          <div class="card bg-base-100 rounded-lg shadow-xl max-w-96 mx-auto">
+            <figure class="card-figure px-6 pt-6">
+              <img
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTYnCdMIRSudVXkR6Ydw9JDbspGr_O4VbJ4lg&s"
+                alt="Modern Villa"
+                class="rounded-xl"
+              />
+            </figure>
+            <div class="card-body items-center text-center max-w-96 mx-auto">
+              <h2 class="card-title">Modern Villa</h2>
+              <p class="text-sm text-gray-600">Price: $450,000</p>
+              <p class="mt-2">
+                A stunning villa with a modern touch, spacious rooms, and a
+                beautiful garden.
+              </p>
+              <div class="card-actions mt-4">
+                <button class="btn btn-success">View Details</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 2: Cozy Cottage -->
+          <div class="card bg-base-100 rounded-lg shadow-xl max-w-96 mx-auto">
+            <figure class="card-figure px-6 pt-6">
+              <img
+                src="https://town-n-country-living.com/wp-content/uploads/2022/01/English-Stone-Cottage-2.jpeg"
+                alt="Cozy Cottage"
+                class="rounded-xl"
+              />
+            </figure>
+            <div class="card-body items-center text-center">
+              <h2 class="card-title">Cozy Cottage</h2>
+              <p class="text-sm text-gray-600">Price: $320,000</p>
+              <p class="mt-2">
+                A quaint, cozy cottage perfect for small families or couples, in
+                a peaceful neighborhood.
+              </p>
+              <div class="card-actions mt-4">
+                <button class="btn btn-success">View Details</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 3: Luxury Mansion -->
+          <div class="card bg-base-100 rounded-lg shadow-xl max-w-96 mx-auto">
+            <figure class="card-figure px-6 pt-6">
+              <img
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ7XDkfMNXYZEV0WY3-1LH9xKuSG7O_N5l_DQ&s"
+                alt="Luxury Mansion"
+                class="rounded-xl"
+              />
+            </figure>
+            <div class="card-body items-center text-center">
+              <h2 class="card-title">Luxury Mansion</h2>
+              <p class="text-sm text-gray-600">Price: $1,200,000</p>
+              <p class="mt-2">
+                A sprawling luxury mansion with private pools, multiple
+                bedrooms, and stunning views.
+              </p>
+              <div class="card-actions mt-4">
+                <button class="btn btn-success">View Details</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 4: Urban Apartment -->
+          <div class="card bg-base-100 rounded-lg shadow-xl max-w-96 mx-auto">
+            <figure class="card-figure px-6 pt-6">
+              <img
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSnMBJCWshZy4sNKZOQm91aT0c6R0S8_2h-0g&s"
+                alt="Urban Apartment"
+                class="rounded-xl"
+              />
+            </figure>
+            <div class="card-body items-center text-center">
+              <h2 class="card-title">Urban Apartment</h2>
+              <p class="text-sm text-gray-600">Price: $280,000</p>
+              <p class="mt-2">
+                A modern urban apartment located in the heart of the city,
+                perfect for young professionals.
+              </p>
+              <div class="card-actions mt-4">
+                <button class="btn btn-success">View Details</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
